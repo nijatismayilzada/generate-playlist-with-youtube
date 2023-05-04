@@ -119,8 +119,8 @@ func main() {
 			}
 
 			if len(searchResults.Hits) > 0 {
-				fmt.Println(strings.TrimPrefix(searchResults.Hits[0].ID, path))
-				playlist[fmt.Sprintln(strings.TrimPrefix(searchResults.Hits[0].ID, path))] = true
+				fmt.Println(strings.TrimPrefix(searchResults.Hits[0].ID, path+"/"))
+				playlist[fmt.Sprintln(strings.TrimPrefix(searchResults.Hits[0].ID, path+"/"))] = true
 			}
 
 		}
